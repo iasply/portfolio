@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+
+header {
+    min-height: 450px;
+}
+
+#imgback{
+    background-image: url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    height: 450px;
+    width: 100vw;
+    filter: brightness(40%);
+
+    position: absolute;
+    z-index: -1;
+}
+
+#headertext {
+    color: white;
+    text-align: center;
+}
+
+#headertext > h1 {
+    padding-top: 100px;
+    padding-bottom: 17px;
+}
+
+#headertext > p {
+    padding-bottom: 50px;
+    max-width: 850px;
+    margin: auto;
+
+}
+
+#headertext > a {
+    padding: 20px 35px ;
+    border: 0.5px solid rgba(255, 255, 255, 0.301);
+    color: white;
+    text-decoration: none;
+    background: #333 ;
+}
+
+#headertext > a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+#section1 {
+    text-align: center;
+}
