@@ -1,8 +1,11 @@
+/* global */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* body h1 h2 h3 p */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +24,8 @@ p {
     padding: 1em 0;
     padding-top: 0px;
 }
+
+/* header */
 header {
     min-height: 450px;
 }
@@ -59,6 +64,8 @@ header {
     background-color: #fff;
     color: black;
 }
+
+/* primeira seção */
 #section-a {
     background: #eaeaea;
     color: #333;
@@ -77,15 +84,14 @@ header {
     grid-template-columns: 1fr minmax(600px, auto) 1fr;
     grid-template-areas: ". a .";
 }
+
+/* segunda seção */
 .flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     column-gap: 1.2em;
 }
-
-
-
 #section-b{
     padding: 2em;
 }
@@ -102,6 +108,8 @@ img {
 .card > div {
     padding: 0em 1.5em 1.5em 1.5em;
 }
+
+/* terceira seção */
 .section-c {
     background-color: #fff;
     color: #333;
@@ -111,12 +119,12 @@ img {
     padding: 0em 250px 2em 250px;
 }
 
+/* quarta seção */
 #section-d {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "cima baixo";
 }
-
 .cima {
     background-color: #2690d4;
     grid-area: cima;
@@ -127,10 +135,10 @@ img {
     padding: 2em;
 }
 
+/* footer */
 footer {
     background-color: black;
-    padding: 2em;
-    
+    padding: 2em;   
 }
 footer > p {
     padding: 0;
@@ -139,18 +147,30 @@ footer > p > a{
     text-decoration: none;
     color: #2690d4;
 }
+
+/* quebra 1 */
 @media (max-width: 1220px) {
+
+    /* primeira seção */
     .content-wrap{
         padding: 0px 1.7em;
    }
+
+    /* segunda seção */
     .card {
         width: 31%;
    }
+
+    /* terceira seção */
     .section-c > p {
         padding: 0em 2em 2em 2em;
    }
 }
+
+/* quebra 2 */
 @media (max-width: 700px) {
+    
+    /* primeira seção */
     .grid {
         display: block;
    }
@@ -160,6 +180,8 @@ footer > p > a{
     .content-wrap{
         padding: 0px 1.5em;
    }
+
+    /* segunda seção */
     .flex {
         display: flex;
         flex-flow: column wrap;
@@ -170,11 +192,13 @@ footer > p > a{
     .card {
         width: 100%;
    }
+
+    /* quarta seção */
     #section-d {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
     "cima"
     "baixo";
-}
+   }
 }
