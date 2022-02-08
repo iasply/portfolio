@@ -64,49 +64,117 @@ header {
     color: #333;
     padding-bottom: 2em;
 }
-
-@media (max-width: 1900px) {
-
-    .content-text > p{
-        column-count: 2;
-        column-gap: 2em;
-    }
-    
-    .content-wrap{
-        grid-area: a;
-        padding: 0px 350px;
-        
-    }
-    
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr minmax(600px, auto) 2fr;
-        grid-template-areas: ". a .";
-    }
-    
-    }
-
-@media (max-width: 1200px) {
-    .content-wrap{
-        padding: 0px 1.5em;
-    }
+.content-text > p{
+    column-count: 2;
+    column-gap: 1em;
+}
+.content-wrap{
+    grid-area: a;
+    padding: 0px 350px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(600px, auto) 1fr;
+    grid-template-areas: ". a .";
+}
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 1.2em;
 }
 
-@media (max-width: 600px) {
+
+
+#section-b{
+    padding: 2em;
+}
+img {
+    height: auto;
+    width: 100%;
+    display: block;
+}
+.card {
+    width: 18.2%;
+    background-color: #fff;
+    color: #333;
+}
+.card > div {
+    padding: 0em 1.5em 1.5em 1.5em;
+}
+.section-c {
+    background-color: #fff;
+    color: #333;
+    padding: 2em;
+}
+.section-c > p {
+    padding: 0em 250px 2em 250px;
+}
+
+#section-d {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cima baixo";
+}
+
+.cima {
+    background-color: #2690d4;
+    grid-area: cima;
+    padding: 2em;
+}
+.baixo {
+    grid-area: baixo;
+    padding: 2em;
+}
+
+footer {
+    background-color: black;
+    padding: 2em;
+    
+}
+footer > p {
+    padding: 0;
+}
+footer > p > a{
+    text-decoration: none;
+    color: #2690d4;
+}
+@media (max-width: 1220px) {
+    .content-wrap{
+        padding: 0px 1.7em;
+   }
+    .card {
+        width: 31%;
+   }
+    .section-c > p {
+        padding: 0em 2em 2em 2em;
+   }
+}
+@media (max-width: 700px) {
     .grid {
         display: block;
-    }
-    header, main {
-        min-height: 550px;
-    }
-    #imgback {
-        min-height: 550px;
-    }
-    
+   }
     .content-text > p{
         column-count: 1;
-    }
+   }
     .content-wrap{
-        padding: 0px 1.8em;
-    }
+        padding: 0px 1.5em;
+   }
+    .flex {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        row-gap: 25px;
+   }
+    .card {
+        width: 100%;
+   }
+    #section-d {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "cima"
+    "baixo";
+}
 }
