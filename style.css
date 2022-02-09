@@ -124,28 +124,44 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "cima baixo";
+    
+}
+#section-d > div {
+    padding: 2em;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .cima {
     background-color: #2690d4;
     grid-area: cima;
-    padding: 2em;
+    
 }
 .baixo {
     grid-area: baixo;
-    padding: 2em;
 }
 
 /* footer */
 footer {
     background-color: black;
-    padding: 2em;   
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:". esq . dir . " ;
+    
 }
 footer > p {
-    padding: 0;
+    padding: 0%;
+    
 }
 footer > p > a{
     text-decoration: none;
     color: #2690d4;
+}
+.esquerdo {
+    grid-area: esq;
+}
+.direito {
+    grid-area: dir;
 }
 
 /* quebra 1 */
@@ -201,4 +217,11 @@ footer > p > a{
     "cima"
     "baixo";
    }
+
+   /* footer  */
+   footer {
+       display: block;
+   }
+   
+   
 }
